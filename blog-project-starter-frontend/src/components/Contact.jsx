@@ -19,7 +19,7 @@ function Contact() {
     console.log(formData)
     try{
       const response=await axios.post(
-        'http://localhost:5000/api/contact',
+        'https://blog-project-starter-backend-ochre.vercel.app/api/contact',
         formData
       )
       alert(response.data.message)
