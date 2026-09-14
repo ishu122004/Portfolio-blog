@@ -7,7 +7,7 @@ function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [err,seterr]=useState()
-    const [log,setlog]=useState()
+    
     useEffect(()=>{
          window.scrollTo(0, 0);
          auth.onAuthStateChanged((user)=>{
@@ -16,7 +16,7 @@ function Login() {
             }
          })
 
-    },[])
+    },[navigate])
 
     const handleLogin = (e) => {
         e.preventDefault();

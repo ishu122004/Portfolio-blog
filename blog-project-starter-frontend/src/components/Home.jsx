@@ -18,9 +18,6 @@ import Footer from './common/Footer'
 function Home() {
     const navigate = useNavigate()
 
-    const showresume=()=>{
-
-    }
     return ( 
 <div className="min-h-screen bg-[#F8F7F2] text-[#252A24]">
 <header className="border-b border-[#DDE4D8] bg-[#F8F7F2]">
@@ -89,7 +86,7 @@ function Home() {
 
           <div className="overflow-x-auto p-6 font-mono text-xs leading-7 sm:p-7 sm:text-sm">
             <p className="text-[#6B7468]">
-              // Hello, I'm Iswarya
+               Hello, I'm Iswarya
             </p>
 
             <p className="mt-3">
@@ -496,7 +493,7 @@ function Home() {
           </button>
 
           <button className="rounded-lg border border-[#526B50] px-7 py-3 font-semibold text-[#526B50] transition duration-300 hover:bg-[#526B50] hover:text-white">
-           <a href="https://github.com/ishu122004" target="_blank">GitHub</a>
+           <a href="https://github.com/ishu122004" target="_blank" rel="noreferrer">GitHub</a>
           </button>
         </div>
 
