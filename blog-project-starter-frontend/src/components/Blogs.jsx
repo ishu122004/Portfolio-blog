@@ -25,7 +25,7 @@ function Blogs() {
                 console.log("User logged out")
             )
         })
-        axios.get(`${import.meta.env.REACT_VITE_API_URL}/api/blogs`).then((res) => {
+        axios.get(`${process.env.REACT_VITE_API_URL}/api/blogs`).then((res) => {
             console.log(res.data)
             setBlogs(res.data)
         }).catch(() => {
@@ -44,7 +44,7 @@ function Blogs() {
             const response = await axios.patch(`${import.meta.env.REACT_VITE_API_URL}/api/blogs/like/${blog_id}`);
             // After successfully updating the likes count in the backend, fetch the updated list of blogs
             if (response.status === 200) {
-                axios.get(`${import.meta.env.REACT_VITE_API_URL}/api/blogs`).then((res) => {
+                axios.get(`${process.env.REACT_VITE_API_URL}/api/blogs`).then((res) => {
                     console.log(res.data)
                     setBlogs(res.data)
                 }).catch(() => {
@@ -63,10 +63,10 @@ function Blogs() {
 
 
         const likes = 0
-        axios.post(`${import.meta.env.REACT_VITE_API_URL}/api/blogs`, { newTitle, date, newContent, likes }).then((res) => {
+        axios.post(`${process.env.REACT_VITE_API_URL}/api/blogs`, { newTitle, date, newContent, likes }).then((res) => {
             console.log(res.data)
 
-            axios.get(`${import.meta.env.REACT_VITE_API_URL}/api/blogs`).then((res) => {
+            axios.get(`${process.env.REACT_VITE_API_URL}/api/blogs`).then((res) => {
                 console.log(res.data)
                 setBlogs(res.data)
             }).catch(() => {
