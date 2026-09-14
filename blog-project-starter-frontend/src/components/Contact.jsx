@@ -19,7 +19,7 @@ function Contact() {
     console.log(formData)
     try{
       const response=await axios.post(
-    `${import.meta.env.VITE_API_URL}/api/contact`,
+    `${import.meta.env.REACT_VITE_API_URL}/api/contact`,
         formData
       )
       alert(response.data.message)
