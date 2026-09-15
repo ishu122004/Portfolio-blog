@@ -28,7 +28,7 @@ function Navbar() {
   }
 
   return (
-    <div className="py-4 border-b border-[#DDE4D8]">
+    <div className="py-5 border-b border-[#DDE4D8]">
       <div className="flex justify-between items-center">
         <h2 className="text-2xl font-bold text-[#252A24]">Personal Portfolio & Blog ⭐</h2>
 
