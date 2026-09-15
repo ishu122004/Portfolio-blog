@@ -9,8 +9,8 @@ function About() {
       number: "01",
       title: "Portfolio Blog",
       type: "Full-Stack Developer Portfolio & Blog",
-      description: "A property management platform with CRUD operations, property filtering and MongoDB integration.",
-      live:"https://musicflow-frontend.vercel.app/"
+      description: "A modern full-stack portfolio and blog with authentication, project showcase, blog publishing, likes, and MongoDB-powered contact management.",
+      live:"https://portfolio-blog-2ynq.vercel.app/signup"
     },
     {
       number: "02",
@@ -116,7 +116,7 @@ function About() {
     <div className="min-h-screen bg-[#F8F7F2] text-[#252A24]">
       <main>
         <section className="border-b border-[#DDE4D8]">
-          <div className="mx-auto max-w-6xl px-5 py-20 md:px-10 md:py-28">
+          <div className="mx-auto max-w-6xl px-5 py-16 md:px-10 md:py-28">
             <p className="text-sm font-semibold uppercase tracking-[4px] text-[#7A9B76]">
               About
             </p>

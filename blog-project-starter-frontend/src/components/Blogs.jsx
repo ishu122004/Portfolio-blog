@@ -187,7 +187,7 @@ function Blogs() {
 <div className="min-h-screen bg-[#F8F7F2] text-[#252A24]">
     <main>
         <section className="border-b border-[#DDE4D8]">
-            <div className="mx-auto max-w-6xl px-5 py-20 md:px-10 md:py-24">
+            <div className="mx-auto max-w-6xl px-5 py-16 md:px-10 md:py-24">
                 <div className="max-w-4xl">
                     <p className="text-sm font-semibold uppercase tracking-[4px] text-[#7A9B76]">
                         Developer Journal

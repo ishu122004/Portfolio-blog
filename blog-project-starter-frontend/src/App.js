@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 import ProtectedRoute from "./components/ProtectedRoute";
 function App() {
   return (
-   <div className="px-10  bg-white border rounded-md">
+   <div className="px-3 sm:px-4 bg-white border rounded-md lg:px-10">
     <BrowserRouter>
     <Navbar/>
     <Routes>

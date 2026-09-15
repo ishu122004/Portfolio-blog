@@ -42,7 +42,7 @@ function Contact() {
       <main>
 
         <section className="border-b border-[#DDE4D8]">
-          <div className="mx-auto max-w-6xl px-5 py-20 md:px-10 md:py-28">
+          <div className="mx-auto max-w-6xl px-5 py-16 md:px-10 md:py-28">
 
             <p className="text-sm font-semibold uppercase tracking-[3px] text-[#7A9B76]">
               Contact
