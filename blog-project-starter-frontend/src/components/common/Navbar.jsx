@@ -11,7 +11,7 @@ function Navbar() {
   const navigate=useNavigate()
 
   useEffect(()=>{
-    auth.onAuthStateChanged((user)=>{
+    const unsubscribe=auth.onAuthStateChanged((user)=>{
       if(user){
         setlog(true)
         console.log("User logged in")
@@ -20,6 +20,7 @@ function Navbar() {
         console.log("user logged out")
       }
     })
+    return unsubscribe
   },[])
 
   const logout=()=>{
