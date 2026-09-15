@@ -57,6 +57,7 @@ function Blogs() {
     };
 
     const handleNewBlogSubmit = (event) => {
+        console.log("API URL:",process.env.REACT_APP_API_URL)
         event.preventDefault(); // Prevent form from refreshing the page
         const today = new Date();
         const date = today.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });

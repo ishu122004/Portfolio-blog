@@ -15,6 +15,7 @@ function Contact() {
   }
 
   const handleSubmit =async (e) => {
+    console.log("API URL:",process.env.REACT_APP_API_URL)
     e.preventDefault()
     console.log(formData)
     try{
